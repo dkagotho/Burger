@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dkagotho/Burger/issues"
   },
-  "homepage": "https://github.com/dkagotho/Burger#readme"
+  "homepage": "https://github.com/dkagotho/Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
