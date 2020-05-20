@@ -32,7 +32,7 @@
   <div class="col-md-12 text-center">
       {{#each burger}}
         {{#unless this.devoured}}
-          <form class="col-md-12" action="/burger/update/{{this.id}}?_method=PUT" method="POST">
+          <form class="col-md-12" action="/burger/update/{{this.id}}" method="POST">
           <div class="burger_name" style="font-size: 14pt; padding: 10px; color: black; font-family: 'Comic Sans MS', cursive, sans-serif" id="burger1">{{this.burger_name}}
           </div>
           <button class="btn btn-warning btn-xs" type="submit"><img src="https://media.giphy.com/media/AAfpHO80onDYk/giphy.gif" alt="" style="max-width: 50px" /></button>
@@ -49,7 +49,7 @@
   <div class="col-md-12 text-center">
     {{#each burger}}
       {{#if this.devoured}}
-          <form class="col-md-12" action="/burger/delete/{{this.id}}?_method=PUT" method="POST">
+          <form class="col-md-12" action="/burger/delete/{{this.id}}" method="POST">
           <div class="burger_name" style="font-size: 14pt; padding: 10px; color: black; font-family: 'Comic Sans MS', cursive, sans-serif">{{this.burger_name}}
           </div>
             <button class="btn btn-warning btn-xs" type="submit"><img src="https://media.giphy.com/media/ToMjGplHPoYqSg7oACc/giphy.gif" alt="" style="max-width: 100px" /></button>

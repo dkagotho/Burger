@@ -28,14 +28,14 @@ burger_router.post('/burger/add', function(req, res){
   });
 });
 
-burger_router.put('/burger/update/:id?', function(req,res){
+burger_router.post('/burger/update/:id', function(req,res){
   var user_id = parseInt(req.params.id);
   burger_call.update(user_id, function(data){
     res.redirect('/burger');
   });
 });
 
-burger_router.put('/burger/delete/:id?', function(req,res){
+burger_router.post('/burger/delete/:id', function(req,res){
   var user_id = parseInt(req.params.id);
   burger_call.delete(user_id, function(data){
     res.redirect('/burger');
