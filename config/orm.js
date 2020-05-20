@@ -33,6 +33,7 @@ function objToSql(ob) {
   return arr.toString();
 }
 //create, read, update, delete
+
 var orm = {
   insert: function(some_tbl, some_col, some_val, cb){
     connection.query('INSERT INTO ' + some_tbl + ' ( ' + some_col + ' ) ' + ' VALUES (?)', [some_val], function(err, result){
